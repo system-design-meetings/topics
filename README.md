@@ -1,10 +1,14 @@
-# This repository is mainly purposed to track our weekly meetings
+## This repository is mainly purposed to track our weekly meetings
 
-## Meetings
+### Meetings
 
 Weekly:
 
-1. Tuesday: 6pm, Berlin, BMO-H-2-3 Farmville-12 P - Solving random competitions 
+Tuesday: 6pm, Berlin, BMO-H-2-3 Farmville-12 P - Solving random competitions 
 
-2. Friday: 6pm, Berlin, BMO-F-0-1 Factory-12 - Discussing system design related topics
+Friday: 6pm, Berlin, BMO-F-0-1 Factory-12 P - Discussing system design related topics
+
+### Repository structure
+
+
 
