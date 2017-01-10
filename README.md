@@ -10,7 +10,7 @@ Friday: 6pm, Berlin, BMO-F-0-1 Factory-12 P - Discussing system design related t
 
 ### Repository structure
 
-Competitions - keep each competition in separate repository. For each competition keep a link to the competition in README. 
+Competitions - keep each competition in a separate folder. For each competition keep a link to the competition platform in README. 
 README can be used for other random notes.
 
 Each subfolder refers to the problem with solutions in different languages. Only accepted solutions should be added. 
@@ -32,7 +32,7 @@ Each subfolder refers to the problem with solutions in different languages. Only
 System design notes - for each meeting please keep all related materials in the corresponding
 folder. The structure is of free format, however it would be good to have links
 to original paper, ideas, sketches, photos of the whiteboard from the meeting and whatever relevant/useful 
-material to help us go back to these material and easily remember what was discussed.
+materials to help us go back to these material and easily remember what was discussed.
 ```
 /system-design
   /15-dec-2016-RTB
