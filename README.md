@@ -41,6 +41,13 @@ materials to help us go back to these material and easily remember what was disc
   /22-dec-2016-Consensus
 ```
 
+Desired Topics  - list of topics we want to discuss in the future
+
+```
+/desired-topics
+   topics.md
+```
+
 
 
 
