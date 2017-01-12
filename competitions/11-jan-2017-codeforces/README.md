@@ -14,17 +14,6 @@ Teams:
 
 **Results:**
 
-Team 1: 
-
-A B C D E F G H I
-
-
-Team 2: 
-
-A B C D E F G H I
-
-Results:
-
 Team 1 - 6 problems (A, B, D, E, G, I)
 
 Team 2 - 7 problems (A, B, D, E, G, H, I)
