@@ -4,9 +4,12 @@ import java.io.IOException;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.util.List;
 import java.util.StringTokenizer;
 import java.io.IOException;
 import java.io.BufferedReader;
+import java.util.LinkedList;
+import java.util.Collections;
 import java.io.InputStreamReader;
 import java.io.InputStream;
 
@@ -20,60 +23,50 @@ public class Main {
     public static void main(String[] args) {
         InputStream inputStream;
         try {
-            inputStream = new FileInputStream("taskd.in");
+            inputStream = new FileInputStream("kings.in");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
         OutputStream outputStream;
         try {
-            outputStream = new FileOutputStream("taskd.out");
+            outputStream = new FileOutputStream("kings.out");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
         MyReader in = new MyReader(inputStream);
         PrintWriter out = new PrintWriter(outputStream);
-        TaskD solver = new TaskD();
+        TaskE solver = new TaskE();
         solver.solve(1, in, out);
         out.close();
     }
 
-    static class TaskD {
+    static class TaskE {
         public void solve(int testNumber, MyReader in, PrintWriter out) {
-            int n = in.nextInt();
-            int[] x = new int[n];
-            int[] y = new int[n];
-            for (int i = 0; i < n; ++i) {
-                x[i] = in.nextInt();
-                y[i] = in.nextInt();
-            }
-            int[][] d = new int[n][n];
-            for (int i = 0; i < n; ++i) {
-                for (int j = i + 1; j < n; ++j) {
-                    d[i][j] = d[j][i] = (x[i] - x[j]) * (x[i] - x[j]) + (y[i] - y[j]) * (y[i] - y[j]);
-                }
-            }
+            int n = in.nextInt(), m = in.nextInt(), k = in.nextInt();
+            int a = in.nextInt(), b = in.nextInt(), c = in.nextInt();
 
-            int ret = Integer.MAX_VALUE;
-            for (int i = 0; i < n; ++i) {
-                boolean[] used = new boolean[n];
-                int time = 0, v = i;
-                while (true) {
-                    used[v] = true;
-                    int next = -1;
-                    for (int j = 0; j < n; ++j) {
-                        if (used[j]) continue;
-                        if (next == -1 || d[v][next] > d[v][j]) {
-                            next = j;
-                        }
-                    }
-                    if (next == -1) break;
-                    time += d[v][next];
-                    v = next;
-                }
-                ret = Math.min(ret, time);
+            int max = n * a;
+            if (max < m * b) {
+                max = m * b;
             }
-
-            out.println(ret);
+            if (max < c * k) {
+                max = c * k;
+            }
+            List<String> kings = new LinkedList<>();
+            if (max == n * a) {
+                kings.add("Joffrey");
+            }
+            if (max == m * b) {
+                kings.add("Robb");
+            }
+            if (max == k * c) {
+                kings.add("Stannis");
+            }
+            Collections.sort(kings);
+            for (String i : kings) {
+                out.print(i + " ");
+            }
+            out.println();
         }
 
     }
