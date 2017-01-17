@@ -18,11 +18,12 @@ Each subfolder refers to the problem with solutions in different languages. Only
 /competitions
    /12-dec-2016-codeforces
       README.md
-      /A
-        code.cpp
-        code.java
-        input
-      /B
+      /team1
+        /A
+          code.cpp
+          code.java
+          input
+        /B
         ...
    /19-dec-2016-hackerrank
    ...
