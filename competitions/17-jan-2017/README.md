@@ -1,15 +1,15 @@
 ## Competition
 
-**Link**:
+**Link**: http://codeforces.com/gym/101132
 
-Time of start 18:45
+Time of start 18:30
 
-Duration: 2.5 hrs
+Duration: 2.0 hrs
 
 Teams:
 
-1. 
+1. Darkhan, Nikoloay
 
-2. 
+2. Aleksey, Yerken, Sayat 
 
 **Results:**
