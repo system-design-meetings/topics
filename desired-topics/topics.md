@@ -9,3 +9,9 @@ It would be nice to checkout the main principles and ideas behind.
 https://understandingpaxos.wordpress.com/
 http://the-paper-trail.org/blog/consensus-protocols-paxos/
 https://www.youtube.com/watch?v=JEpsBg0AO6o
+https://habrahabr.ru/post/222825/
+
+
+3. CDN
+https://blog.cloudflare.com/a-brief-anycast-primer/
+http://goanna.cs.rmit.edu.au/~xiaodong/mbc/Theses/jaison-minorThesis.pdf
